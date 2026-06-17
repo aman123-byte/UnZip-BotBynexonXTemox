@@ -8,7 +8,7 @@ async def start(client, message):
     reply_markup = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📍 Update Channel", url="https://t.me/xuxlatex"),
+                InlineKeyboardButton("📍 Update Channel", url="https://t.me/lemonux"),
             ],
             [
                 InlineKeyboardButton("👥 Support Group", url="https://t.me/lemonux"),
