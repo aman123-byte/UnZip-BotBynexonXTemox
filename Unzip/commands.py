@@ -11,8 +11,8 @@ async def start(client, message):
                 InlineKeyboardButton("📍 Update Channel", url="https://t.me/xuxlatex"),
             ],
             [
-                InlineKeyboardButton("👥 Support Group", url="https://t.me/xuxlatex"),
-                InlineKeyboardButton("👩‍💻 Developer", url="https://t.me/xuxlatex"),
+                InlineKeyboardButton("👥 Support Group", url="https://t.me/lemonux"),
+                InlineKeyboardButton("👩‍💻 Developer", url="https://t.me/lemonux"),
             ]
         ]
     )
