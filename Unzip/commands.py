@@ -1,5 +1,5 @@
 from pyrogram import Client, filters
-from pyrogram.types import Message, InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 active_tasks = {}
 
@@ -53,7 +53,13 @@ user_id = callback_query.from_user.id
 if user_id in active_tasks:
     task = active_tasks[user_id]
     task.cancel()
-    await callback_query.answer("⛔ Unzipping has been cancelled.", show_alert=True)
+    await callback_query.answer(
+        "⛔ Unzipping has been cancelled.",
+        show_alert=True
+    )
 else:
-    await callback_query.answer("⚠️ No ongoing unzip operation.", show_alert=True)
+    await callback_query.answer(
+        "⚠️ No ongoing unzip operation.",
+        show_alert=True
+    )
 ```
